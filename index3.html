@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lexend Exa', sans-serif;
+            font-family: Libre Caslon Text;
+            text-transform: capitalize; 
+            
+
+
+        }
+        .contact-section {
+          background-color: #fff;
+          display: flex;
+          flex-direction: column;
+          overflow: hidden;
+          align-items: center;
+          font-family: Libre Caslon Text, sans-serif;
+          color: #000;
+        }
+        .header {
+            position: fixed;
+            backdrop-filter: blur(5px);
+          background-color: rgba(255, 255, 255, 0.8);
+          align-self: stretch;
+          display: flex;
+          width: 100%;
+          gap: 20px;
+          font-size: 16px;
+          font-weight: 700;
+          text-transform: uppercase;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          padding: 5px 73px 11px;
+        }
+        .logo {
+          aspect-ratio: 3.03;
+          object-fit: contain;
+          object-position: center;
+          width: 179px;
+          border-radius: 0;
+          max-width: 100%;
+        }
+        .nav-menu {
+          display: flex;
+          align-items: center;
+          gap: 10px 64px;
+          flex-wrap: wrap;
+          margin: auto 0;
+        }
+        .nav-link {
+          align-self: stretch;
+          margin: auto 0;
+          text-decoration: none;
+          color: black;
+          font-size: 16px;
+          font-weight:bold ;
+          padding-right: 30px;
+           text-transform: uppercase; word-wrap: break-word"
+
+        }
+        .download-button {
+            border-color: #000;
+          border-radius: 14px;
+          background-color: #FC7393;
+          align-self: stretch;
+          color: #fff;
+          width: 180px;
+          height: 40px;
+          text-align: center;
+          padding-top: 10px;
+          margin-left: 50px;
+          position: relative;
+          left: -100px;
+          /* margin-top: 50px; */
+          /* padding: 12px 23px; */
+        }
+        .page-title {
+          margin-top: 50px;
+          font: 400 128px Notable, sans-serif;
+        }
+        .intro-text {
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 40px;
+          margin-top: 192px;
+          width: 853px; color: black; font-size: 24px; font-family: Libre Caslon Text; font-weight: 400; text-transform: capitalize; line-height: 40px; word-wrap: break-word"
+        }
+        .contact-form {
+          border-radius: 14px;
+          background-color: #FFE8EE;
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          display: flex;
+          margin-top: 50px;
+          width: 100%;
+          max-width: 1111px;
+          flex-direction: column;
+          align-items: start;
+          font-size: 24px;
+          font-weight: 500;
+          padding: 80px 65px;
+          border: 1px solid #F7C3CF;
+        }
+        #name{
+            font-size: large;
+        }
+        #email{
+            font-size: large;
+        }
+        #massege{
+            font-size: x-large;
+        }
+        .form-label {
+          line-height: 2;
+          margin-left: 28px;
+        }
+        .form-input {
+          border-radius: 14px;
+          background-color: #fff;
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          margin-top: 5px;
+          width: 746px;
+          max-width: 100%;
+          line-height: 2;
+          padding: 19px 28px;
+        }
+        .form-textarea {
+          border-radius: 14px;
+          background-color: #fff;
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          margin-top: 6px;
+          width: 746px;
+          max-width: 100%;
+          line-height: 2;
+          padding: 18px 28px 147px;
+        }
+        .submit-button {
+          border-radius: 32px;
+          background-color: #fff;
+          box-shadow: 0 4px 4px rgba(255, 255, 255, 0.42);
+          width: 205px;
+          max-width: 100%;
+          font-size: 20px;
+          font-weight: 700;
+          margin: 40px 0 0 18px;
+          padding: 17px 62px;
+        }
+        .footer {
+          background-color: #FFBACA;
+          align-self: stretch;
+          display: flex;
+          margin-top: 124px;
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+          font-size: 20px;
+          text-align: center;
+          padding: 103px 80px 30px;
+        }
+        .footer-content {
+          display: flex;
+          margin-left: 22px;
+          width: 100%;
+          max-width: 1038px;
+          flex-direction: column;
+          align-items: center;
+        }
+        .footer-text {
+          font-weight: 500;
+        }
+        .footer-divider {
+          aspect-ratio: 12.5;
+          object-fit: contain;
+          object-position: center;
+          width: 816px;
+          border-radius: 0;
+          margin-top: 85px;
+          max-width: 100%;
+        }
+        .contact-info {
+          align-self: stretch;
+          display: flex;
+          margin-top: 45px;
+          gap: 40px 100px;
+          font-weight: 700;
+        }
+        .contact-detail {
+          width: 279px;
+          opacity: 0.70; 
+        }
+        .email {
+          align-self: start;
+          flex-grow: 1;
+          opacity: 0.70; 
+          width: 289px;
+        }
+        .footer-logo {
+          aspect-ratio: 6.37;
+          object-fit: contain;
+          object-position: center;
+          width: 338px;
+          border-radius: 0;
+          margin-top: 172px;
+          max-width: 100%;
+        }
+        .visually-hidden {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0,0,0,0);
+          border: 0;
+        }
+        @media (max-width: 991px) {
+          .header {
+            max-width: 100%;
+            padding: 0 20px;
+          }
+          .nav-menu {
+            max-width: 100%;
+          }
+          .download-button {
+            padding-left: 20px;
+          }
+          .page-title {
+            max-width: 100%;
+            margin-top: 40px;
+            font-size: 40px;
+          }
+          .intro-text {
+            max-width: 100%;
+            margin-top: 40px;
+          }
+          .contact-form {
+            max-width: 100%;
+            margin-top: 40px;
+            padding: 0 20px;
+          }
+          .form-label {
+            margin-left: 10px;
+          }
+          .form-input {
+            padding: 0 20px;
+          }
+          .form-textarea {
+            padding: 0 20px 110px;
+          }
+          .submit-button {
+            margin-left: 10px;
+            white-space: initial;
+            padding: 0 20px;
+          }
+          .footer {
+            max-width: 100%;
+            margin-top: 40px;
+            padding: 100px 20px 0;
+          }
+          .footer-content {
+            max-width: 100%;
+          }
+          .footer-text {
+            max-width: 100%;
+          }
+          .footer-divider {
+            margin-top: 40px;
+          }
+          .contact-info {
+            max-width: 100%;
+            margin-top: 40px;
+          }
+          .footer-logo {
+            margin-top: 40px;
+          }
+        }
+      </style>
+      
+      <div class="contact-section">
+        <header class="header">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2e3c5191249e8f0daac73f65b398b0b8698a062839b044b88d68988be2cf76ab?placeholderIfAbsent=true&apiKey=6939cf98dc654546b4c18181f2f5fcb8" alt="Website Logo" class="logo" />
+          <nav class="nav-menu">
+            <a href="index.html" class="nav-link">home</a>
+            <a href="index2.html" class="nav-link">about</a>
+            <a href="index.html#portfolio" class="nav-link">portfolio</a>
+            <a href="index3.html" class="nav-link">contact me</a>
+            <a href="resume/nishma madhu resume1.pdf" class="nav-link download-button">download cv</a>
+          </nav>
+        </header>
+      
+        <div style="width: 1000px; height: 166px; top: 50px; position: absolute">
+          <div id="contact" style="left: 0px; top: 0px; position: absolute; opacity: 0.20; color: black; font-size: 128px; font-family: Notable; font-weight: 400; text-transform: capitalize; word-wrap: break-word">contact me</div>
+          <div style="left: 331px; top: 72px; position: absolute; opacity: 0.90; color: black; font-size: 48px; font-family: Lexend Exa; font-weight: 600; text-transform: capitalize; word-wrap: break-word">contact me</div>
+        </div>
+        <p class="intro-text" >
+          "Let's create something amazing together! Whether you're looking for a skilled UI/UX designer to bring your ideas to life or need help enhancing your digital experiences, I'm here to help. Feel free to reach out I'd love to hear about your projects, ideas, or just connect!"
+        </p>
+      
+        <form class="contact-form">
+          <label for="name" class="form-label">name *</label>
+          <input type="text" id="name" class="form-input" placeholder="your name..." required aria-required="true" />
+      
+          <label for="email" class="form-label">email address *</label>
+          <input type="email" id="email" class="form-input" placeholder="Your email address..." required aria-required="true" />
+      
+          <label for="message" class="form-label">message *</label>
+          <textarea id="message" class="form-textarea" placeholder="your message..." required aria-required="true"></textarea>
+      
+          <button type="submit" class="submit-button">submit</button>
+        </form>
+      
+        <footer class="footer">
+          <div class="footer-content">
+            <p class="footer-text">
+              "Feel free to reach out for collaboration, projects, or inquiries. I'd love to hear from you!"
+            </p>
+            <img src="images/icons.png" alt="" class="footer-divider" />
+            <div class="contact-info">
+              <p class="contact-detail">kakkanad, ernakulam, kerala</p>
+              <p class="contact-detail">+91 8139044550<br />+91 9947800879</p>
+              <p class="email">nishmamadhu2003@gmail.com</p>
+            </div>
+            <img src="images/whatinstalinke.png" alt="Footer Logo" class="footer-logo" />
+          </div>
+        </footer>
+      </div>
+</body>
+</html>

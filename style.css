@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#home{
+    position: fixed;
+    backdrop-filter: blur(5px);
+}
+.main{
+    position: sticky;
+}
+.explore{
+
+    cursor: pointer;
+    transition: 350ms ease;
+}
+.explore:hover{
+    box-shadow: rgba(0, 0, 0, 0.54) 0px 3px 8px; 
+    background-color: rgba(252, 115, 147, 1);
+    color: rgb(255, 255, 255) ;
+    border-color: rgba(252, 115, 147, 1);
+    border-radius: 14px;
+
+}
+.card{
+    cursor: pointer;
+    transition: 350ms ease;
+}
+.card:hover{
+    box-shadow: rgba(47, 21, 35, 0.96) 0px 3px 8px;
+    margin-top: -20px;
+}
+@media (max-width: 600px){
+
+
+    
+
+}
